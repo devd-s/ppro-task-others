@@ -1,0 +1,11 @@
+replicaCount: 1
+image:
+  repository: bitnami/nginx
+  tag: "latest" # Will be overridden by the GitHub Actions with the Docker image SHA
+service:
+  type: ClusterIP
+  port: 80
+ingress:
+  enabled: false
+namespace: qa
+
